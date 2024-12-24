@@ -1,0 +1,155 @@
+
+.hero {
+    background-image: linear-gradient(to bottom, #007bff, #fff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.departments {
+    margin: 2em;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.department-card {
+    background-color: #fff;
+    padding: 0; /* Remove padding to fit image */
+    margin: 1em;
+    border: 1px solid #ddd;
+    height: 320px;
+    box-shadow: 0 0 10px #52bde0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.department-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #52bde0;
+    color: #52bde0;
+}
+
+.department-card img {
+    border-radius: 10px 10px 0 0; /* Round top corners */
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover the area without stretching */
+}
+.contact {
+    background-color: rgb(59, 58, 58);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.filter {
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main, .registration, .login {
+    border-radius: 10px;
+    text-align: center;
+    background-color: #9dc1e7;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.form-section {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 1em auto; /* Center the form section */
+    padding: 0;
+    overflow: hidden; /* Hide overflow for animation */
+    max-height: 0; /* Collapse section by default */
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Start hidden */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Set a max width for large screens */
+}
+
+.form-section.open {
+    max-height: 500px; /* Set to a max height that accommodates your form */
+    opacity: 1; /* Fade in */
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%; /* Full width */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Full width */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.banner {
+    background-image: url('./banner.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 450px; /* Adjust height as needed */
+    width: auto;
+    margin-top: 0px;
+}
+.card-body a{
+    text-decoration: none;
+    color:#49c2eb ;
+}
+.card-body a:hover{
+    color: black;
+}

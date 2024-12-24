@@ -1,0 +1,65 @@
+.service-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    height: 280px;
+}
+.service-card:hover{
+    border: 2px solid  #05baf1;
+    box-shadow: 0 4px 20px #52bde0;
+}
+.service-icon {
+    font-size: 50px;
+    color: #05baf1;
+}
+.service-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.service-description {
+    font-size: 14px;
+    color: #666;
+}
+.story-card {
+    position: relative; /* Positioning context for the overlay */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden; /* Ensures the overlay does not go outside the card */
+}
+.story-image {
+    width: 70%;
+    height: 40%;
+    border-radius: 5px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(29, 138, 215, 0.5); /* Blue with 50% opacity */
+    border-radius: 5px;
+    display: flex; /* To center the content */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    color: white; /* Text color on the overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+.story-card:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+h1 {
+    font-weight: bold; /* Makes the h1 bold */
+}
+.video-icon {
+   font-size: 5em; /* Adjust the size as needed */
+   color: rgba(29, 138, 215, 1); /* Light blue color */
+   opacity: 0.5; /* Adjust opacity if needed */
+}

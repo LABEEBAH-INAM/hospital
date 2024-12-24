@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Services</title>
+    <link rel="icon" type="image/x-icon" href="Photo_from_Faisal_Tanoli-removebg-preview.ico">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="About 2.css">
+    <style>
+        body {
+            background-color:#f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        #q1 {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px #52bde0;
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            color: #52bde0;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .service h2 {
+            color: #52bde0;
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .service p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+      
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white" id="my">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" href="#"><img src="Screenshot__21_-removebg-preview.png" alt="" id="f8"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html" onclick="setActive(this)">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SERVICES.HTML" onclick="setActive(this)">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Facility.html" onclick="setActive(this)">FACILITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department.html" onclick="setActive(this)">DEPARTMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-info" href="centre.html" onclick="setActive(this)">CENTRES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acadamics .html" onclick="setActive(this)">ACADEMIC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vacancies.html" onclick="setActive(this)">VACANCIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about us.html" onclick="setActive(this)">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html" onclick="setActive(this)">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedbackform.html" onclick="setActive(this)">FEEDBACK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="successstories.html" onclick="setActive(this)">SUCCESS STORIES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </nav>
+    
+    <style>
+    .nav-link.active {
+        color: #0dcaf0; /* Bootstrap info color */
+        font-weight: bold; /* Optional: make the active link bold */
+    }
+    </style>
+    
+    <script>
+    function setActive(element) {
+        // Remove active class from all nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => link.classList.remove('active'));
+    
+        // Add active class to the clicked link
+        element.classList.add('active');
+    }
+    </script>
+    <div class="container-fluid p-4">
+        <h2 style="text-align: center;">CENTRES</h2>
+    </div>
+    <div class="container" id="q1">
+        <h1>Our Centers</h1>
+ <div class="services">
+            <div class="service">
+                <h2>Diagnostic Center</h2>
+                <p>Advanced diagnostics including MRI, CT scans, and lab tests.</p>
+                <p>Our Diagnostic Center provides comprehensive imaging services to ensure accurate diagnoses, facilitating timely and effective treatment for patients.</p>
+            </div>
+            <div class="service">
+                <h2>Cancer Center</h2>
+                <p>Comprehensive cancer care with personalized treatment plans.</p>
+                <p>We offer state-of-the-art treatment options, including chemotherapy, radiation therapy, and support services to assist patients and families during their journey.</p>
+            </div>
+            <div class="service">
+                <h2>Heart Center</h2>
+                <p>Specialized heart care and advanced cardiac procedures.</p>
+                <p>Our Heart Center focuses on diagnosing and treating cardiovascular conditions, providing a range of services from prevention to complex cardiac interventions.</p>
+            </div>
+            <div class="service">
+                <h2>Community Health Center</h2>
+                <p>Preventive health services and community outreach programs.</p>
+                <p>The Community Health Center emphasizes preventive care and health education, aiming to improve overall community well-being and access to healthcare services.</p>
+            </div>
+        </div>
+    </div>
+    <div class="my-5">
+        <footer class="text-center text-lg-start text-white"style="background-color: #1c2331" margin-top="20px" id="f1">
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-2">
+                   <a href="index.html"> <img src="Screenshot__21_-removebg-preview.png" alt="" class="ms-5" id="f8"></a>
+                  <h6 class="text-uppercase fw-bold ms-3 text-info">CAMBRIDGE HOSPITAL</h6>
+                  <hr class="mb-4 mt-0 d-inline-block mx-auto ms-4"style="width: 150px; background-color: #0ccae7; height: 2px">
+                  <p>
+                    Cambridge Memorial Hospital is a vibrant full service, acute care hospital committed to providing exceptional health care to the communities of Cambridge, North Dumfries and the region of Waterloo with a mission to "Create Healthier Communities, Together."
+                  </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 " id="my3">
+     
+                  <h6 class="text-uppercase fw-bold text-info">Follow Us</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto ms-2"
+                      style="width: 60px; background-color: #0ccae7; height: 2px"/>
+                  <p>
+                    <a href="https://www.facebook.com/CambridgeMedicalCenter/" target="_blank" class="text-white">Facebook</a>
+                  </p>
+                  <p>
+                    <a href="https://www.instagram.com/cambridgemedicalcentre/" target="_blank"  class="text-white"> Instagram</a>
+                  </p>
+                  <p>
+                    <a href="https://www.youtube.com/@cambridgemedicalrehabilita6866" target="_blank"  class="text-white">Youtube
+                    </a>
+                  </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" id="my3">
+                  <h6 class="text-uppercase fw-bold text-info">Get in touch</h6>
+                  <hr class="mb-4 mt-0 d-inline-block mx-auto ms-3"
+                      style="width: 80px; background-color: #0ccae7; height: 2px"/>
+                      <p>700 Coronation <br> <br> Blvd,        
+                        Cambridge,<br> <br> ON 
+                        N1R 3G2 <br> <br>
+                        Call: <span class="text-info">519-621-2330</span> </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="my3">
+                  <h6 class="text-uppercase fw-bold text-info">Contact</h6>
+                  <hr
+                      class="mb-4 mt-0 d-inline-block mx-auto ms-2"
+                      style="width: 50px; background-color: #0ccae7; height: 2px"
+                      />
+                  <p><i class="fas fa-home mr-3"></i>Address: Pakistan </p>
+                  <p><i class="fas fa-home mr-3"></i>info@CambridgeHospital.pk</p>
+                  <p><i class="fas 76-envelope mr-3"></i> +92 123 4567890</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                
+                </div>
+              </div>
+            </div>
+          </section>
+          <div
+               class="text-center p-3"
+               style="background-color:  #0ccae7"
+               >
+            © 2024 Cambridge Hospital. All Rights Reserved.
+          </div>
+        </footer>
+      </div>
+</body>
+</html>

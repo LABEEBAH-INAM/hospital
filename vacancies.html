@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Vacancies Form</title>
+    <link rel="icon" type="image/x-icon" href="Photo_from_Faisal_Tanoli-removebg-preview.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="About 2.css">
+    <style>
+        body {
+            background-color:#f7f7f7; 
+            position: relative;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 2px solid  #54B4D3; 
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color:  #52bde0; 
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color:  #54B4D3;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color:  #54B4D3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white" id="my">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" href="index.html"><img src="Screenshot__21_-removebg-preview.png" alt="" id="f8"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html" onclick="setActive(this)">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SERVICES.HTML" onclick="setActive(this)">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Facility.html" onclick="setActive(this)">FACILITY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department.html" onclick="setActive(this)">DEPARTMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="centre.html" onclick="setActive(this)">CENTRES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="acadamics .html" onclick="setActive(this)">ACADEMIC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-info" href="vacancies.html" onclick="setActive(this)">VACANCIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="about us.html" onclick="setActive(this)">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html" onclick="setActive(this)">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedbackform.html" onclick="setActive(this)">FEEDBACK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="successstories.html" onclick="setActive(this)">SUCCESS STORIES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </nav>
+    
+    <style>
+    .nav-link.active {
+        color: #0dcaf0; /* Bootstrap info color */
+        font-weight: bold; /* Optional: make the active link bold */
+    }
+    </style>
+    
+    <script>
+    function setActive(element) {
+        // Remove active class from all nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => link.classList.remove('active'));
+    
+        // Add active class to the clicked link
+        element.classList.add('active');
+    }
+    </script>
+    
+    <div class="container-fluid p-4">
+        <h1 style="text-align: center;">VACANCIES</h1>
+    </div>
+    
+<div class="form-container mt-2">
+    <h2>Job Vacancies</h2>
+    <form id="jobForm" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter Job Title" pattern="[a-z]" required>
+        </div>
+        <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="Radiology">Radiology</option>
+                <option value="Surgery">Surgery</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Neurology">Neurology</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="experience">Work Experience (in years)</label>
+            <input type="number" id="experience" name="experience" min="0" pattern="[0-1]{2}"  placeholder="Enter work experience" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter phone number" pattern="^\d{11}$" title="Please enter your phone number." required>
+        </div>
+        <div class="form-group">
+            <label for="resume">Upload CV/Resume</label>
+            <input type="file" id="resume" name="resume" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Cover Letter</label>
+            <textarea id="message" name="message" p rows="4" placeholder="Write a brief cover letter" required></textarea>
+        </div>
+        <input type="submit" value="Submit Application"  onclick="alert('Your Vacancie Form is Submitted')">
+    </form>
+</div>
+<div class="my-5">
+    <footer class="text-center text-lg-start text-white"style="background-color: #1c2331" margin-top="20px" id="f1">
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-2">
+               <a href="index.html"> <img src="Screenshot__21_-removebg-preview.png" alt="" class="ms-5" id="f8"></a>
+              <h6 class="text-uppercase fw-bold ms-3 text-info">CAMBRIDGE HOSPITAL</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto ms-4"style="width: 150px; background-color: #0ccae7; height: 2px">
+              <p>
+                Cambridge Memorial Hospital is a vibrant full service, acute care hospital committed to providing exceptional health care to the communities of Cambridge, North Dumfries and the region of Waterloo with a mission to "Create Healthier Communities, Together."
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 " id="my3">
+ 
+              <h6 class="text-uppercase fw-bold text-info">Follow Us</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto ms-2"
+                  style="width: 60px; background-color: #0ccae7; height: 2px"/>
+              <p>
+                <a href="https://www.facebook.com/CambridgeMedicalCenter/" target="_blank" class="text-white">Facebook</a>
+              </p>
+              <p>
+                <a href="https://www.instagram.com/cambridgemedicalcentre/" target="_blank"  class="text-white"> Instagram</a>
+              </p>
+              <p>
+                <a href="https://www.youtube.com/@cambridgemedicalrehabilita6866" target="_blank"  class="text-white">Youtube
+                </a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" id="my3">
+              <h6 class="text-uppercase fw-bold text-info">Get in touch</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto ms-3"
+                  style="width: 80px; background-color: #0ccae7; height: 2px"/>
+                  <p>700 Coronation <br> <br> Blvd,        
+                    Cambridge,<br> <br> ON 
+                    N1R 3G2 <br> <br>
+                    Call: <span class="text-info">519-621-2330</span> </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="my3">
+              <h6 class="text-uppercase fw-bold text-info">Contact</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto ms-2"
+                  style="width: 50px; background-color: #0ccae7; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i>Address: Pakistan </p>
+              <p><i class="fas fa-home mr-3"></i>info@CambridgeHospital.pk</p>
+              <p><i class="fas 76-envelope mr-3"></i> +92 123 4567890</p>
+              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+           class="text-center p-3"
+           style="background-color:  #0ccae7"
+           >
+        © 2024 Cambridge Hospital. All Rights Reserved.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

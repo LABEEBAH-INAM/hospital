@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background-color:#f7f7f7 ;
+  height: 100h;
+}
+#f8 {
+height: 80px;
+width: 100px;
+margin-left: 20px;
+}
+.nav-link {
+color: black;
+
+
+}
+.nav-link:hover {
+color: #0ccae7;
+}
+#my{
+border: 4px solid #0ccae7;
+border-radius: 5px;
+}
+#my1{
+position: relative;
+width: 100%;
+}
+#my3{
+margin-top: 90px;
+}
+#f1{
+border: 4px solid #0ccae7;
+border-radius: 5px;
+}
+#f2{
+border: none;
+border-radius: 3px;
+font-size: large;
+width: 120px;
+height: 40px;
+}
+#f5{
+border: 2px solid #0ccae7;
+}
+#f7:hover{
+border: 2px solid  #05baf1;
+box-shadow: 0 4px 20px #52bde0;
+}
+.navbar-toggler {
+background-color: #0dcaf0;
+}
+.navbar-toggler-icon {
+background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+}
+#d2{
+  color: black;
+}
+#d2:hover{
+  color:  #0ccae7;
+}
